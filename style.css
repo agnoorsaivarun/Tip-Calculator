@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width:70%;
+    background-color:  hsl(185, 41%, 84%);
+    margin: 6% auto;
+}
+.input,.output{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1%;
+    padding: 1%;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 5%;
+}
+.output{
+    background-color:  hsl(183, 100%, 15%);
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.btn{
+    width:30%;
+    margin:1.5%;
+    padding: 1%;
+    background-color: hsl(183, 100%, 15%);
+    color: white;   
+}
+#reset{
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 2%;
+    width:80%;
+    margin: auto;
+}
+.persons,.tip,.bill,.tipout,.billout{
+    margin: 2%;
+    padding: 1%;
+}
+.tipout,.billout{
+    display: flex;
+    flex-direction: column;
+}

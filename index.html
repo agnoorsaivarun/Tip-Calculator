@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <section class="bill">
+                <label for="bill">Bill</label>
+                <input type="number" id="bill" onchange="billFun()" value="0" >
+            </section>
+            <section class="tip">
+                <section>Select Tip</section>
+                <section class="buttons">
+                    <button class="btn" id="btn5" onclick="tipFun(5)" value="5">5%</button>
+                    <button class="btn" id="btn10" onclick="tipFun(10)" value="10">10%</button>
+                    <button class="btn" id="btn15" onclick="tipFun(15)" value="15">15%</button>
+                    <button class="btn" id="btn25" onclick="tipFun(25)" value="25">25%</button>
+                    <button class="btn" id="btn50" onclick="tipFun(50)" value="50">50%</button>
+                    <button class="btn" id="cbtn" disabled>Custom</button>    
+                </section>
+            </section>
+            <section class="persons">
+                <label for="people">Number of People</label>
+                <input type="number" id="people" onchange="billFun()" value="0">
+            </section>
+        </div>
+        <div class="output">
+            <section class="tipout">
+                <label for="tipout">Tip Amount per person</label>
+                <input id="tipout" disabled value="0"/>
+            </section>
+            <section class="billout">
+                <label for="billout">Total Bill per person</label>
+                <input id="billout" disabled value="0"/>
+            </section>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
